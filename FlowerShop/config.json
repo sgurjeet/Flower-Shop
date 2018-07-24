@@ -1,0 +1,4 @@
+{
+	"name": "Gurjeet",
+	"connectionString":"mongodb://localhost:27017/flowerorder"
+}

@@ -1,0 +1,32 @@
+express : server-side JS framework for creating web services built on top of node.js
+
+
+mongod - server
+mongo - client
+
+But we'll use express as a client for db
+Default at localhost 127.0.0.1
+
+database at B:\es6\mongodb
+
+To run server : mongod --dbpath B:\es6\mongodb
+Table : Collections
+Data : Records
+
+Examples:
+> show collections
+> db.createCollection('Books')
+> show collections
+Books
+> db.Books.insertOne({name : 'Animal Farm'})
+> db.Books.find()
+{ "_id" : ObjectId("5ad2e06fc934a9f5fa77875d"), "name" : "Animal Farm" }
+
+db.Books.updateOne(JSON Object)
+db.Books.deleteOne()
+
+
+
+mongod for server
+nodemon app.js for client to listen for incoming data from mongodb
+
